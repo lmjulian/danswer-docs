@@ -93,7 +93,8 @@
       "group": "Guides",
       "pages": [
         "guides/assistants",
-        "guides/providers"
+        "guides/providers",
+        "guides/embedding_providers"
       ]
     },
     {
