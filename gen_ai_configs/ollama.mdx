@@ -1,6 +1,6 @@
 ---
-title: Ollama
-description: 'Configure Danswer to use Ollama'
+title: LM Studio
+description: 'Configure Danswer to use LM Studio'
 ---
 
 Refer to [Model Configs](https://docs.danswer.dev/gen_ai_configs/overview#model-configs) for how to set the
@@ -9,21 +9,13 @@ environment variables for your particular deployment.
 **Note**: While we support self hosted LLMs, you will get significantly better responses with a more powerful
 model like GPT-4.
 
-## What is Ollama
-Ollama provides an easy way to host LLMs locally and to provide a REST API for the model.
+## What is LM Studio
+LM Studio provides an easy way to host LLMs locally and to provide a REST API for the model.
 Refer to the following resources to get started:
-- https://ollama.ai/
-- https://github.com/jmorganca/ollama
+- https://lmstudio.ai/
+- https://lmstudio.ai/docs
 
-Once you start a model with a command like `ollama run llama2`, you can verify that the API works with a curl request:
-```
-curl http://localhost:11434/api/generate -d '{
-  "model": "llama2",
-  "prompt":"Why is the sky blue?"
-}'
-```
-
-## Set Danswer to use Ollama
+## Set Danswer to use LM Studio
 
 On the `LLM` page in the Admin Panel add a `Custom LLM Provider` with the following settings:
 
